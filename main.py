@@ -35,7 +35,7 @@ def audio_to_text(audio):
 def play_sound(text):
     try:
         tts = gtts.gTTS(text)
-        tempfile = "C:/Users/gopes/Speech_to_text/temp.mp3"
+        tempfile = "//Location path for storing the temporary MP3 file//"
         tts.save(tempfile)
         playsound(tempfile)
         os.remove(tempfile)
